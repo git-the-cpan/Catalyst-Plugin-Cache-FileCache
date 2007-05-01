@@ -13,4 +13,4 @@ provides:
   Catalyst::Plugin::Cache::FileCache:
     file: lib/Catalyst/Plugin/Cache/FileCache.pm
     version: 0.5
-generated_by: Module::Build version 0.2609
+generated_by: Module::Build version 0.26

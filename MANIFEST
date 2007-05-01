@@ -1,4 +1,3 @@
-Build.PL
 Changes
 lib/Catalyst/Plugin/Cache/FileCache.pm
 Makefile.PL
