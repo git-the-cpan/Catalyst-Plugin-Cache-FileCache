@@ -1,6 +1,14 @@
 Revision history for Perl extension Catalyst::Plugin::Cache::FileCache
-0.06  2007-04-29 02:13:00
+
+0.7  2007-09-18 16:11:23
+        - Fix missing Class::Data::Inheritable dependency
+
+        [DEPRECATION NOTICE]
+        - This module has been deprecated in favor of Catalyst::Plugin::Cache.
+          You can configure that module to use a FileCache backend.
+
+0.6  2007-04-29 02:13:00
         - Switch to Module::Install
 
-0.5  Tue Apr 23 01:00:00 2005
+0.5  2005-04-23 01:00:00
         - original version.

@@ -3,7 +3,7 @@ package Catalyst::Plugin::Cache::FileCache;
 use strict;
 use base 'Class::Data::Inheritable';
 
-our $VERSION='0.6';
+our $VERSION = '0.7';
 
 use Cache::FileCache;
 
@@ -38,7 +38,7 @@ __END__
 
 =head1 NAME
 
-Catalyst::Plugin::Cache::FileCache - File cache
+Catalyst::Plugin::Cache::FileCache - (DEPRECATED) File cache
 
 =head1 SYNOPSIS
 
@@ -56,6 +56,10 @@ Catalyst::Plugin::Cache::FileCache - File cache
 
     $c->response->body($data);
 
+=head1 DEPRECATION NOTICE
+
+This module has been deprecated in favor of L<Catalyst::Plugin::Cache>.
+You can configure that module to use a FileCache backend.
 
 =head1 DESCRIPTION
 
@@ -63,17 +67,15 @@ Extends base class with a file cache.
 
 =head1 METHODS
 
-=over 4
+=head2 setup
 
-=item cache
+=head2 cache
 
 Returns an instance of C<Cache::FileCache>
 
-=back
-
 =head1 SEE ALSO
 
-L<Cache::FileCache>, L<Catalyst>.
+L<Catalyst::Plugin::Cache>, L<Cache::FileCache>, L<Catalyst>.
 
 =head1 AUTHOR
 

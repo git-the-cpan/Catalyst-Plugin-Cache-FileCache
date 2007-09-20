@@ -1,5 +1,5 @@
 NAME
-    Catalyst::Plugin::Cache::FileCache - File cache
+    Catalyst::Plugin::Cache::FileCache - (DEPRECATED) File cache
 
 SYNOPSIS
         use Catalyst qw[Cache::FileCache];
@@ -16,15 +16,20 @@ SYNOPSIS
 
         $c->response->body($data);
 
+DEPRECATION NOTICE
+    This module has been deprecated in favor of Catalyst::Plugin::Cache. You
+    can configure that module to use a FileCache backend.
+
 DESCRIPTION
     Extends base class with a file cache.
 
 METHODS
-    cache
-        Returns an instance of "Cache::FileCache"
+  setup
+  cache
+    Returns an instance of "Cache::FileCache"
 
 SEE ALSO
-    Cache::FileCache, Catalyst.
+    Catalyst::Plugin::Cache, Cache::FileCache, Catalyst.
 
 AUTHOR
     Christian Hansen, "ch@ngmedia.com" Sebastian Riedel "sri@oook.de"
